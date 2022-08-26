@@ -10,10 +10,9 @@ class Newton extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     var items = [
-      "assets/freud_images/freud-1.jpg",
-      "assets/freud_images/freud-2.jpg",
-      "assets/freud_images/freud-3.jpg",
-      "assets/freud_images/freud-4.jpg",
+      "assets/newton_images/newton-1.jpg",
+      "assets/newton_images/newton-2.jpg",
+      "assets/newton_images/newton-3.jpg",
     ];
 
     return Scaffold(
@@ -22,7 +21,7 @@ class Newton extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(children: [
-        Lottie.asset("assets/freud.json",
+        Lottie.asset("assets/newton.json",
             animate: true, repeat: true, height: size.height * 0.4),
         RichText(
             text: TextSpan(
@@ -34,8 +33,7 @@ class Newton extends StatelessWidget {
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
-                    String url =
-                        "https://en.wikipedia.org/wiki/Isaac_Newton";
+                    String url = "https://en.wikipedia.org/wiki/Isaac_Newton";
                     var urllaunchable = await canLaunch(url);
                     if (urllaunchable) {
                       await launch(url);

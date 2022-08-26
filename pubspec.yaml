@@ -81,6 +81,7 @@ flutter:
   - assets/oppenheimer_images/
   - assets/leonardo_images/
   - assets/freud_images/
+  - assets/newton_images/
 
 
   # The following line ensures that the Material Icons font is

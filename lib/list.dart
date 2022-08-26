@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:lottie/lottie.dart';
 import 'package:scientist_app/Leonardo.dart';
+import 'package:scientist_app/Newton.dart';
 import 'package:scientist_app/oppenheimer.dart';
 
 import 'Einstein.dart';
@@ -137,7 +138,7 @@ class ListPage extends StatelessWidget {
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Sigmund Freud",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],
@@ -146,7 +147,7 @@ class ListPage extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+                  context, MaterialPageRoute(builder: (context) => Newton()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -154,12 +155,12 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset("assets/newton_images/newton-1.jpg"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Isaac Newton",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],
