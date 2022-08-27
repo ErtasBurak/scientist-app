@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:lottie/lottie.dart';
+import 'package:scientist_app/Arf.dart';
+import 'package:scientist_app/Bell.dart';
+import 'package:scientist_app/Curie.dart';
 import 'package:scientist_app/Leonardo.dart';
 import 'package:scientist_app/Newton.dart';
+import 'package:scientist_app/Turing.dart';
 import 'package:scientist_app/oppenheimer.dart';
 
 import 'Einstein.dart';
@@ -169,7 +173,7 @@ class ListPage extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+                  context, MaterialPageRoute(builder: (context) => Bell()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -177,12 +181,12 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset("assets/bell_images/bell-1.jpg"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Alexander Graham Bell",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],
@@ -191,7 +195,7 @@ class ListPage extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+                  context, MaterialPageRoute(builder: (context) => Turing()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -199,12 +203,12 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset("assets/turing_images/turing-1.jpg"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Alan Mathison Turing",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],
@@ -213,7 +217,7 @@ class ListPage extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+                  context, MaterialPageRoute(builder: (context) => Curie()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -221,12 +225,12 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset("assets/curie_images/curie-1.jpg"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Marie Curie",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],
@@ -235,7 +239,7 @@ class ListPage extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+                  context, MaterialPageRoute(builder: (context) => Arf()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -243,12 +247,12 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset("assets/arf_images/arf-1.jpg"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Nikola Tesla",
+                      "Cahit Arf",
                       style: TextStyle(color: Colors.green, fontSize: 24),
                     )
                   ],

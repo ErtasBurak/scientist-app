@@ -82,6 +82,10 @@ flutter:
   - assets/leonardo_images/
   - assets/freud_images/
   - assets/newton_images/
+  - assets/bell_images/
+  - assets/turing_images/
+  - assets/curie_images/
+  - assets/arf_images/
 
 
   # The following line ensures that the Material Icons font is
