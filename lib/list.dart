@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:lottie/lottie.dart';
 import 'package:scientist_app/Arf.dart';
@@ -21,8 +22,10 @@ class ListPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Scientists"),centerTitle: true,
-        actions: [IconButton(
+        title: Text("Scientists"),
+        centerTitle: true,
+        actions: [
+          IconButton(
               icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
                   ? Icons.dark_mode
                   : Icons.light_mode),
@@ -31,7 +34,8 @@ class ListPage extends StatelessWidget {
                     MyApp.themeNotifier.value == ThemeMode.light
                         ? ThemeMode.dark
                         : ThemeMode.light;
-              })],
+              })
+        ],
         backgroundColor: Colors.cyan,
         automaticallyImplyLeading: false,
       ),
@@ -40,30 +44,33 @@ class ListPage extends StatelessWidget {
         children: <Widget>[
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Einstein()));
+              Get.to(Einstein(),
+                  transition: Transition.circularReveal,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.black)),
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Color.fromARGB(255, 34, 146, 237),
                 child: Row(
                   children: [
-                    Lottie.asset("assets/einstein.json"),
+                    Lottie.asset("assets/lottie_animations/einstein.json"),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Albert Einstein",
-                      style: TextStyle(color: Colors.lime, fontSize: 24),
+                      style: TextStyle(fontSize: 24),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Tesla()));
+              Get.to(Tesla(),
+                  transition: Transition.size, duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
@@ -71,7 +78,9 @@ class ListPage extends StatelessWidget {
                 color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/tesla.jpeg"),
+                    Image.asset(
+                      "assets/tesla_images/tesla.jpeg",
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
@@ -84,8 +93,8 @@ class ListPage extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Oppenheimer()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Oppenheimer()));
             },
             child: Container(
                 margin: EdgeInsets.all(5),

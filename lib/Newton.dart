@@ -21,7 +21,7 @@ class Newton extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(children: [
-        Lottie.asset("assets/newton.json",
+        Lottie.asset("assets/lottie_animations/newton.json",
             animate: true, repeat: true, height: size.height * 0.4),
         RichText(
             text: TextSpan(

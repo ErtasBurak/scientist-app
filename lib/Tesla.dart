@@ -67,7 +67,7 @@ class Tesla extends StatelessWidget {
         SizedBox(
           height: size.height * 0.05,
         ),
-        Lottie.asset("assets/acdc.json",
+        Lottie.asset("assets/lottie_animations/acdc.json",
             animate: true, repeat: true, height: size.height * 0.4)
       ]),
     );

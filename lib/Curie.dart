@@ -21,7 +21,7 @@ class Curie extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(children: [
-        Lottie.asset("assets/curie.json",
+        Lottie.asset("assets/lottie_animations/curie.json",
             animate: true, repeat: true, height: size.height * 0.4),
         RichText(
             text: TextSpan(

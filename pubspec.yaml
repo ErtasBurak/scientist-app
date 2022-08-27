@@ -46,6 +46,8 @@ dependencies:
 
   http:
 
+  get:
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -53,8 +55,8 @@ dependencies:
 flutter_native_splash: 
   color: "#E2E5EA"
   color_dark: "#010101" 
-  image: "assets/tesla.jpeg"
-  image_dark: "assets/tesla.jpeg"
+  image: "assets/splash_screen.png"
+  image_dark: "assets/splash_screen.png"
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +88,7 @@ flutter:
   - assets/turing_images/
   - assets/curie_images/
   - assets/arf_images/
+  - assets/lottie_animations/
 
 
   # The following line ensures that the Material Icons font is

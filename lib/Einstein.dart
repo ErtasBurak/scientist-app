@@ -69,7 +69,7 @@ class Einstein extends StatelessWidget {
         SizedBox(
           height: size.height * 0.05,
         ),
-        Lottie.asset("assets/photoelectric.json",
+        Lottie.asset("assets/lottie_animations/photoelectric.json",
             animate: true, repeat: true, height: size.height * 0.4)
       ]),
     );

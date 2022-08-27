@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             OnboardingScreen(
               Lottie.asset(
-                "assets/science3.json",
+                "assets/lottie_animations/science3.json",
                 repeat: true,
                 reverse: true,
                 animate: true,
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             OnboardingScreen(
                 Lottie.asset(
-                  "assets/science2.json",
+                  "assets/lottie_animations/science2.json",
                   repeat: true,
                   reverse: true,
                   animate: true,
@@ -131,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ]),
             OnboardingScreen(
                 Lottie.asset(
-                  "assets/rocketonb.json",
+                  "assets/lottie_animations/rocketonb.json",
                   repeat: true,
                   reverse: true,
                   animate: true,

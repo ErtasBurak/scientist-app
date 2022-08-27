@@ -22,7 +22,7 @@ class Oppenheimer extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(children: [
-        Lottie.asset("assets/rocketopp.json",
+        Lottie.asset("assets/lottie_animations/rocketopp.json",
             animate: true, repeat: true, height: size.height * 0.4),
         RichText(
             text: TextSpan(

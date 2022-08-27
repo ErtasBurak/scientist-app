@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
 import 'onboard.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return ValueListenableBuilder<ThemeMode>(
         valueListenable: themeNotifier,
         builder: (_, ThemeMode currentMode, __) {
-          return MaterialApp(
+          return GetMaterialApp(
             themeMode: currentMode,
             theme: ThemeData(brightness: Brightness.light),
             darkTheme: ThemeData(brightness: Brightness.dark),

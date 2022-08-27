@@ -20,7 +20,7 @@ class Leonardo extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(children: [
-        Lottie.asset("assets/leonardo.json",
+        Lottie.asset("assets/lottie_animations/leonardo.json",
             animate: true, repeat: true, height: size.height * 0.4),
         RichText(
             text: TextSpan(
