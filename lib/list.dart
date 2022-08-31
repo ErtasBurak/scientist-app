@@ -247,7 +247,7 @@ class ListPage extends StatelessWidget {
                     Text(
                       "Alan Mathison Turing",
                       style:
-                          GoogleFonts.xanhMono(color: Colors.red, fontSize: 24),
+                          GoogleFonts.xanhMono(color: Colors.red, fontSize: 26),
                     )
                   ],
                 )),
@@ -272,7 +272,8 @@ class ListPage extends StatelessWidget {
                     ),
                     Text(
                       "Marie Curie",
-                      style: TextStyle(color: Colors.amber, fontSize: 24),
+                      style: GoogleFonts.zcoolKuaiLe(
+                          color: Colors.amber, fontSize: 26),
                     )
                   ],
                 )),
@@ -297,7 +298,8 @@ class ListPage extends StatelessWidget {
                     ),
                     Text(
                       "Cahit Arf",
-                      style: TextStyle(color: Colors.brown, fontSize: 24),
+                      style: GoogleFonts.laBelleAurore(
+                          color: Colors.brown, fontSize: 26),
                     )
                   ],
                 )),

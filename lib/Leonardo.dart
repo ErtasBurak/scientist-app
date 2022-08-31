@@ -31,7 +31,7 @@ class Leonardo extends StatelessWidget {
                 text: 'Leonardo da Vinci',
                 style: GoogleFonts.dekko(
                     decoration: TextDecoration.underline,
-                    color: Colors.red,
+                    color: Colors.deepOrange,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()

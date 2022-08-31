@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -17,7 +18,10 @@ class Turing extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Alan Mathison Turing"),
+        title: Text(
+          "Alan Mathison Turing",
+          style: GoogleFonts.xanhMono(),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -26,15 +30,14 @@ class Turing extends StatelessWidget {
         RichText(
             text: TextSpan(
                 text: 'Alan Mathison Turing',
-                style: TextStyle(
+                style: GoogleFonts.xanhMono(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.red,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
-                    String url =
-                        "https://en.wikipedia.org/wiki/Alan_Turing";
+                    String url = "https://en.wikipedia.org/wiki/Alan_Turing";
                     var urllaunchable = await canLaunch(url);
                     if (urllaunchable) {
                       await launch(url);
@@ -45,8 +48,9 @@ class Turing extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
+                      " (23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist.Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, "
+                      "which can be considered a model of a general-purpose computer.He is widely considered to be the father of theoretical computer science and artificial intelligence.",
+                  style: GoogleFonts.xanhMono(
                       fontWeight: FontWeight.normal,
                       decoration: TextDecoration.none))
             ])),

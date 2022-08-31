@@ -60,9 +60,20 @@ flutter_native_splash:
   image: "assets/splash_screen.png"
   image_dark: "assets/splash_screen.png"
 
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/scientistappicon.png"
+  adaptive_icon_foreground: "assets/scientistappicon.png"
+  adaptive_icon_background: "#ffffff"
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
