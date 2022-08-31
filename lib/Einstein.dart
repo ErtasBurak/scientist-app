@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,18 +19,20 @@ class Einstein extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Albert Einstein"),centerTitle: true,
-        
+        title: Text(
+          "Albert Einstein",
+          style: GoogleFonts.anton(),
+        ),
+        centerTitle: true,
       ),
       body: ListView(children: [
         RichText(
             text: TextSpan(
                 text: 'Albert Einstein',
-                style: TextStyle(
+                style: GoogleFonts.anton(
+                    color: Colors.grey,
                     decoration: TextDecoration.underline,
-                    color: Colors.red,
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold),
+                    fontSize: 24),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
                     String url =
@@ -46,10 +49,11 @@ class Einstein extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the photonelectron.",
-                  style: TextStyle(
+                      " (14 March 1879 – 18 April 1955) was a German-born American scientist."
+                      "He received the Nobel Prize in Physics in 1921 for theoretical physics.",
+                  style: GoogleFonts.anton(
                       fontWeight: FontWeight.normal,
-                      
+                      fontSize: 20,
                       decoration: TextDecoration.none))
             ])),
         CarouselSlider.builder(

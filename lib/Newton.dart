@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -17,7 +18,10 @@ class Newton extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Isaac Newton"),
+        title: Text(
+          "Isaac Newton",
+          style: GoogleFonts.goldman(),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -26,9 +30,9 @@ class Newton extends StatelessWidget {
         RichText(
             text: TextSpan(
                 text: 'Isaac Newton',
-                style: TextStyle(
+                style: GoogleFonts.goldman(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.cyan,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
@@ -44,8 +48,9 @@ class Newton extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
+                      " (25 December 1642 – 20 March 1726/27[a]) was an English mathematician, physicist, astronomer, alchemist, theologian, and author (described in his time as a 'natural philosopher'), "
+                      "widely recognised as one of the greatest mathematicians and physicists of all time and among the most influential scientists. He was a key figure in the philosophical revolution known as the Enlightenment.",
+                  style: GoogleFonts.goldman(
                       fontWeight: FontWeight.normal,
                       decoration: TextDecoration.none))
             ])),

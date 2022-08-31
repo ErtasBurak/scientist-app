@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,7 +19,10 @@ class Tesla extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Nikola Tesla"),
+        title: Text(
+          "Nikola Tesla",
+          style: GoogleFonts.ballet(fontWeight: FontWeight.bold),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -39,9 +43,9 @@ class Tesla extends StatelessWidget {
         RichText(
             text: TextSpan(
                 text: 'Nikola Tesla',
-                style: TextStyle(
+                style: GoogleFonts.ballet(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.green,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
@@ -59,9 +63,11 @@ class Tesla extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
-                      fontWeight: FontWeight.normal,
+                      " 10 July [O.S. 28 June] 1856 – 7 January 1943) was a Serbian-American inventor, electrical engineer, mechanical engineer, "
+                      "and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
+                  style: GoogleFonts.ballet(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.none))
             ])),
         SizedBox(

@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -16,7 +17,10 @@ class Leonardo extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Leonardo da Vinci"),
+        title: Text(
+          "Leonardo da Vinci",
+          style: GoogleFonts.dekko(),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -25,9 +29,9 @@ class Leonardo extends StatelessWidget {
         RichText(
             text: TextSpan(
                 text: 'Leonardo da Vinci',
-                style: TextStyle(
+                style: GoogleFonts.dekko(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.red,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
@@ -44,8 +48,9 @@ class Leonardo extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
+                      " (15 April 1452 – 2 May 1519) was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect. While his fame initially rested on his achievements as a painter,"
+                      " he also became known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and paleontology.",
+                  style: GoogleFonts.dekko(
                       fontWeight: FontWeight.normal,
                       decoration: TextDecoration.none))
             ])),

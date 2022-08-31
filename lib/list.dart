@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:lottie/lottie.dart';
 import 'package:scientist_app/Arf.dart';
@@ -22,7 +23,11 @@ class ListPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Scientists"),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25))),
+        title: Text("Scientists", style: GoogleFonts.pacifico()),
         centerTitle: true,
         actions: [
           IconButton(
@@ -36,7 +41,6 @@ class ListPage extends StatelessWidget {
                         : ThemeMode.light;
               })
         ],
-        backgroundColor: Colors.cyan,
         automaticallyImplyLeading: false,
       ),
       body: ListView(
@@ -49,9 +53,6 @@ class ListPage extends StatelessWidget {
                   duration: Duration(seconds: 2));
             },
             child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.black)),
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
                 child: Row(
@@ -62,7 +63,8 @@ class ListPage extends StatelessWidget {
                     ),
                     Text(
                       "Albert Einstein",
-                      style: TextStyle(fontSize: 24),
+                      style:
+                          GoogleFonts.anton(fontSize: 26, color: Colors.grey),
                     )
                   ],
                 )),
@@ -75,194 +77,227 @@ class ListPage extends StatelessWidget {
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset(
-                      "assets/tesla_images/tesla.jpeg",
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(
+                        "assets/tesla_images/tesla.jpeg",
+                      ),
                     ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
-                    Text(
-                      "Nikola Tesla",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
-                    )
+                    Text("Nikola Tesla",
+                        style: GoogleFonts.ballet(
+                            fontSize: 26,
+                            color: Colors.green,
+                            fontWeight: FontWeight.bold))
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Oppenheimer()));
+              Get.to(Oppenheimer(),
+                  transition: Transition.zoom, duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/oppenheimer_images/oppenheimer-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(
+                          "assets/oppenheimer_images/oppenheimer-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "J. Robert Oppenheimer",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style:
+                          GoogleFonts.cardo(color: Colors.blue, fontSize: 26),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Leonardo()));
+              Get.to(Leonardo(),
+                  transition: Transition.fade, duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/leonardo_images/leonardo-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child:
+                          Image.asset("assets/leonardo_images/leonardo-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
-                      "Leaonardo da Vinci",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      "Leonardo da Vinci",
+                      style: GoogleFonts.dekko(
+                          color: Colors.deepOrange, fontSize: 26),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Freud()));
+              Get.to(Freud(),
+                  transition: Transition.topLevel,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/freud_images/freud-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/freud_images/freud-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Sigmund Freud",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style: GoogleFonts.federant(
+                          color: Colors.deepPurple, fontSize: 26),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Newton()));
+              Get.to(Newton(),
+                  transition: Transition.fadeIn,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/newton_images/newton-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/newton_images/newton-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Isaac Newton",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style:
+                          GoogleFonts.goldman(color: Colors.cyan, fontSize: 26),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Bell()));
+              Get.to(Bell(),
+                  transition: Transition.rightToLeftWithFade,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/bell_images/bell-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/bell_images/bell-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Alexander Graham Bell",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style:
+                          GoogleFonts.iceberg(color: Colors.teal, fontSize: 26),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Turing()));
+              Get.to(Turing(),
+                  transition: Transition.leftToRightWithFade,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/turing_images/turing-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/turing_images/turing-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Alan Mathison Turing",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style:
+                          GoogleFonts.xanhMono(color: Colors.red, fontSize: 24),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Curie()));
+              Get.to(Curie(),
+                  transition: Transition.upToDown,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/curie_images/curie-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/curie_images/curie-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Marie Curie",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style: TextStyle(color: Colors.amber, fontSize: 24),
                     )
                   ],
                 )),
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Arf()));
+              Get.to(Arf(),
+                  transition: Transition.cupertinoDialog,
+                  duration: Duration(seconds: 2));
             },
             child: Container(
                 margin: EdgeInsets.all(5),
                 height: size.height * 0.1,
-                color: Colors.amber[500],
                 child: Row(
                   children: [
-                    Image.asset("assets/arf_images/arf-1.jpg"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset("assets/arf_images/arf-1.jpg"),
+                    ),
                     SizedBox(
                       width: size.width * 0.1,
                     ),
                     Text(
                       "Cahit Arf",
-                      style: TextStyle(color: Colors.green, fontSize: 24),
+                      style: TextStyle(color: Colors.brown, fontSize: 24),
                     )
                   ],
                 )),

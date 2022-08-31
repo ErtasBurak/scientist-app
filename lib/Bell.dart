@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -17,7 +18,10 @@ class Bell extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Alexander Graham Bell"),
+        title: Text(
+          "Alexander Graham Bell",
+          style: GoogleFonts.iceberg(),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -28,7 +32,7 @@ class Bell extends StatelessWidget {
                 text: 'Alexander Graham Bell',
                 style: TextStyle(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.teal,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
@@ -45,8 +49,9 @@ class Bell extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
+                      "  (March 3, 1847 - August 2, 1922) was a Scottish-born British-Canadian-American teacher, scientist, and inventor. He was the founder of the Bell Telephone Company. "
+                      "In 1876, Bell was the first inventor to patent the telephone, and he helped start the Bell Telephone Company with others in July 1877.",
+                  style: GoogleFonts.iceberg(
                       fontWeight: FontWeight.normal,
                       decoration: TextDecoration.none))
             ])),

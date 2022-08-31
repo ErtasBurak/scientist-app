@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,7 +19,10 @@ class Freud extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sigmund Freud"),
+        title: Text(
+          "Sigmund Freud",
+          style: GoogleFonts.federant(),
+        ),
         centerTitle: true,
       ),
       body: ListView(children: [
@@ -27,15 +31,14 @@ class Freud extends StatelessWidget {
         RichText(
             text: TextSpan(
                 text: 'Sigmund Freud',
-                style: TextStyle(
+                style: GoogleFonts.federant(
                     decoration: TextDecoration.underline,
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
-                    String url =
-                        "https://en.wikipedia.org/wiki/Sigmund_Freud";
+                    String url = "https://en.wikipedia.org/wiki/Sigmund_Freud";
                     var urllaunchable = await canLaunch(url);
                     if (urllaunchable) {
                       await launch(url);
@@ -46,8 +49,9 @@ class Freud extends StatelessWidget {
                 children: [
               TextSpan(
                   text:
-                      " was a remarkable scientist. He was studyinh the electricity.",
-                  style: TextStyle(
+                      "  (6 May 1856 – 23 September 1939) was an Austrian neurologist and the founder of psychoanalysis, "
+                      "a clinical method for evaluating and treating pathologies in the psyche through dialogue between a patient and a psychoanalyst.",
+                  style: GoogleFonts.federant(
                       fontWeight: FontWeight.normal,
                       decoration: TextDecoration.none))
             ])),
