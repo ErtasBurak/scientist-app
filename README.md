@@ -29,3 +29,8 @@ Sets a navigation with url link.
 
 - [dots_indicator](https://pub.dev/packages/carousel_slider)
 Sets a indicator for pages.
+
+## Demo
+
+https://user-images.githubusercontent.com/88059407/188006604-a00b64aa-45f1-4095-ab4a-2a63e21e8f6e.mp4
+
