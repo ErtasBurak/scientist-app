@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 import 'list.dart';
@@ -57,9 +58,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 animate: true,
               ),
               [
-                const Text(
+                Text(
                   "Science without religion is lame, religion without science is blind. -Albert Einstein",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.jacquesFrancois(
+                      fontSize: 18, fontWeight: FontWeight.normal),
                   textAlign: TextAlign.center,
                 ),
                 const Padding(padding: EdgeInsets.all(12.0)),
@@ -100,9 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   animate: true,
                 ),
                 [
-                  const Text(
+                  Text(
                     "If your hate could be turned into electricity, it would light up the whole world. -Nikola Tesla",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.vampiroOne(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                   const Padding(padding: EdgeInsets.all(12.0)),
@@ -137,9 +140,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   animate: true,
                 ),
                 [
-                  const Text(
+                  Text(
                     "Now I am become Death, the destroyer of worlds. -J. Robert Oppenheimer",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.k2d(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                   const Padding(padding: EdgeInsets.all(12.0)),

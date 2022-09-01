@@ -1,16 +1,31 @@
-# scientist_app
+# Scientist App
 
-A new Flutter project.
+This project is about the famous scientists. I picked 10 of them.These are my 10 famous intelligent favourite brains.
 
-## Getting Started
+Created with flutter-mobile.
 
-This project is a starting point for a Flutter application.
+## Libraries
 
-A few resources to get you started if this is your first Flutter project:
+- [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)
+Used for creating splashscreen.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [lottie](https://pub.dev/packages/lottie)
+The animation library, very exciting and fun.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [google_fonts](https://pub.dev/packages/google_fonts)
+For Text Fonts, there are lots of variety. And popular font library.
+
+- [get](https://pub.dev/packages/get)
+Very useful for navigation and has cool transitions.
+
+- [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
+Can be use for set the app icon for both(iOS/Android) side.
+
+- [carousel_slider](https://pub.dev/packages/carousel_slider)
+We can make slider for images. And calibrate it with different settings. Like autoplay etc.
+
+- [url_launcher](https://pub.dev/packages/carousel_slider)
+Sets a navigation with url link.
+
+- [dots_indicator](https://pub.dev/packages/carousel_slider)
+Sets a indicator for pages.

@@ -36,15 +36,11 @@ dependencies:
 
   lottie:
 
-  provider:
-
   dots_indicator:
 
   carousel_slider:
 
   url_launcher:
-
-  http:
 
   get:
 
