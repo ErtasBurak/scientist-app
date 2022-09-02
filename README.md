@@ -28,7 +28,7 @@ We can make slider for images. And calibrate it with different settings. Like au
 Sets a navigation with url link.
 
 - [dots_indicator](https://pub.dev/packages/carousel_slider)
-Sets a indicator for pages.
+Sets an indicator for pages.
 
 ## Demo
 
